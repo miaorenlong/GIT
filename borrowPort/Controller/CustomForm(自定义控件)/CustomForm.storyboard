@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SoI-Fg-0l1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Form View Controller-->
+        <scene sceneID="c3D-Xd-w1C">
+            <objects>
+                <viewController id="SoI-Fg-0l1" customClass="CustomFormViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7od-PU-Edc"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Xv-Cc-afo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zxb-E4-MAD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ow0-FV-Bqc" customClass="CustomTestField">
+                                <rect key="frame" x="36" y="67" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="占字提示符" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdT-QM-fe7">
+                                <rect key="frame" x="36" y="182" width="303" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ow0-FV-Bqc" firstAttribute="leading" secondItem="Zxb-E4-MAD" secondAttribute="leadingMargin" constant="20" id="Dro-Lj-SaF"/>
+                            <constraint firstItem="gdT-QM-fe7" firstAttribute="width" secondItem="ow0-FV-Bqc" secondAttribute="width" id="GRp-gR-JRX"/>
+                            <constraint firstItem="gdT-QM-fe7" firstAttribute="top" secondItem="ow0-FV-Bqc" secondAttribute="bottom" constant="85" id="Jar-vQ-2vD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ow0-FV-Bqc" secondAttribute="trailing" constant="20" id="PqR-aR-A6N"/>
+                            <constraint firstItem="gdT-QM-fe7" firstAttribute="leading" secondItem="ow0-FV-Bqc" secondAttribute="leading" id="RoJ-Bi-k7D"/>
+                            <constraint firstItem="ow0-FV-Bqc" firstAttribute="top" secondItem="7od-PU-Edc" secondAttribute="bottom" constant="47" id="iig-qh-vW4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="ow0-FV-Bqc" id="kjT-wg-Lyj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b54-Dx-A3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="140.77961019490255"/>
+        </scene>
+    </scenes>
+</document>
